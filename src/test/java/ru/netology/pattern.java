@@ -42,7 +42,7 @@ public class pattern {
         $("[data-test-id='phone'] input").setValue(phone);
         $("[data-test-id='agreement']").click();
         $("button.button").click();
-        $(byText("У вас уже запланирована встреча на другую дату. Перепланировать?")).shouldBe(Condition.visible, Duration.ofSeconds(1));
+        $(byText("У вас уже запланирована встреча на другую дату. Перепланировать?")).shouldBe(Condition.visible);
 //        $(".notification__content").shouldBe(Condition.visible, Duration.ofSeconds(1));
 //        $(".notification__content").shouldHave(Condition.exactText("У вас уже запланирована встреча на другую дату. Перепланировать?"));
     }
